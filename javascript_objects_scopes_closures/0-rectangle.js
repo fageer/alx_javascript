@@ -1,1 +1,2 @@
-export class Rectangle {};
+class Rectangle {};
+export { Rectangle };
