@@ -8,11 +8,12 @@
   <script>
     const container = document.getElementById("container");
     const paragraph = document.createElement("p");
+    const button = document.createElement("button");
+
     paragraph.textContent = "New paragraph";
     container.appendChild(paragraph);
 
-    const button = document.createElement("button");
-    button.textContent = "Remove and Show Paragraph";
+    button.textContent = "hide or Show Paragraph";
     container.appendChild(button);
 
     let isVisible = false;
