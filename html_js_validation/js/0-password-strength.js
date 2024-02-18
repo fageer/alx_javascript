@@ -4,7 +4,7 @@ const error = document.getElementById('error');
 const passregex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])(.{8,})$/;
 
 function validatePassword() {
-    if (!passregex.test(password.value)) {
+    if (!passregex.test(password.value.trim())) {
         error.textContent = "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.";
         return false;
     } else {
